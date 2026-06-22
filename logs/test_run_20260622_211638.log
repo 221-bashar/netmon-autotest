@@ -1,0 +1,28 @@
+========================================
+netmon-autotest run: 20260622_211638
+========================================
+Checking Python environment...
+Python 3.10.12
+Running pytest suite...
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-9.1.1, pluggy-1.6.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/t/netmon-autotest
+plugins: anyio-4.11.0
+collecting ... collected 12 items
+
+test_telemetry.py::test_payload_has_all_fields PASSED                    [  8%]
+test_telemetry.py::test_cpu_within_range PASSED                          [ 16%]
+test_telemetry.py::test_memory_within_range PASSED                       [ 25%]
+test_telemetry.py::test_interface_status_values PASSED                   [ 33%]
+test_telemetry.py::test_packet_drop_not_negative PASSED                  [ 41%]
+test_telemetry.py::test_timestamp_valid_iso PASSED                       [ 50%]
+test_telemetry.py::test_device_id_correct PASSED                         [ 58%]
+test_telemetry.py::test_anomaly_is_known_or_null PASSED                  [ 66%]
+test_telemetry.py::test_switchstate_defaults PASSED                      [ 75%]
+test_telemetry.py::test_all_interfaces_start_up PASSED                   [ 83%]
+test_telemetry.py::test_anomaly_injection PASSED                         [ 91%]
+test_telemetry.py::test_bandwidth_positive PASSED                        [100%]
+
+============================== 12 passed in 0.01s ==============================
+✅ All tests passed - 20260622_211638
